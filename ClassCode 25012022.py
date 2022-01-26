@@ -4,15 +4,15 @@
 
 noVaccinated = 10
 onceVaccinated = 15
-twiceVaccinated = 7
-thriceVaccinated = 8
+twiceVaccinated = 7*2
+thriceVaccinated = 8*3
 classTotal = 40
 numVaccinated = onceVaccinated + twiceVaccinated + thriceVaccinated
 
-mean = classTotal/numVaccinated
+mean = numVaccinated/classTotal
+print('The mean number of times vaccinated is ', int(mean))
 
-print(mean)
-
+print('-----------------------------------------------')
 # create a store class that allow customers purchase items in your store
 
 class store:
@@ -36,6 +36,7 @@ z.item_Bought(5)
 
 z.items_left(5)
 
+print('-----------------------------------------------')
 # create a polymorphism class function
 
 class survive:
@@ -61,7 +62,7 @@ class fight:
 surviver = survive()
 fighter = fight()
 
-def action(x):
-    x.option1()
-    x.option2()
-    x.option3()
+def action(do):
+    do.option1()
+    do.option2()
+    do.option3()
